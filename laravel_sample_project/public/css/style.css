@@ -1,0 +1,28 @@
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #00ccff;
+    color: black;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color:#ff99cc;
+}
+
+body{
+    background-image: url('images/sunset.jpg');
+    background-size: cover;
+}

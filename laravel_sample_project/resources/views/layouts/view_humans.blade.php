@@ -17,11 +17,13 @@
                 </div>
                 <div class="col-sm-10">
                     @yield('table')
+                    <br><br>
+                    <a href="/add-humans" ><button style="width:100%" class="btn btn-primary" type="button">Add Data</button></a>
                 </div>
                 <div class="col-sm-1">
                 </div>
             </div>
         </div>
-        
+        <br><br>
     </body>
 </html>

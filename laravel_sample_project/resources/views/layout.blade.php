@@ -15,6 +15,7 @@
                 <th>Age</th>
                 <th>Gender</th>
                 <th>Address</th>
+                <th colspan='2'>Action</th>
             </tr>
             @foreach ($humans as $human)
             <tr>
@@ -31,8 +32,19 @@
                     @endif
                 </td>
                 <td>{{ $human->address }}</td>
+                <td>
+                    <form action="{{ url('delete-humans', $human->id)}}">
+                        <input role="button" type="submit" name="submit" value="Delete">
+                    </form>
+                </td>
+                <td>
+                    <form action="{{ url('edit', $human->id)}}">
+                        <input role="button" type="submit" name="submit" value="Edit">
+                    </form>
+                </td>
             </tr>
             @endforeach
         </table>
     @endsection
+    
 </body>
